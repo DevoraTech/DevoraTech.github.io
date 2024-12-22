@@ -5887,6 +5887,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   width: 100%;
   color: #495057;
   text-align: inherit;
+  padding: 5px;
 }
 
 .list-group-item-action:hover, .list-group-item-action:focus {
@@ -12231,4 +12232,42 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+
+
+.custom-list {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--indigo), var(--cyan));
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item-action {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item-action:hover {
+  transform: scale(1.05);
+  background-color: #f3f4f6;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.list-group-item-action:first-child {
+  background-color: #e7f3ff;
+}
+
+.list-group-item-action:last-child {
+  background-color: #f5f5f5;
 }
